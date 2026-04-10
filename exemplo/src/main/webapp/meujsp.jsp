@@ -7,7 +7,15 @@
     </head>
 
     <body>
-        <h1>HelloWorld, <%= request.getParameter("NOME")%>!!</h1>
+        <h2>Hello World!</h2>
+        <FORM METHOD="GET" ACTION="finaljsp.jsp">
+            <P>
+                Digite seu sobrenome:
+                <INPUT TYPE="HIDDEN" NAME="NOME" VALUE="<%= request.getParameter("NOME")%>">
+                <INPUT TYPE="TEXT" NAME="SOBRENOME" />
+                <INPUT TYPE="SUBMIT" VALUE="Enviar" />
+                <INPUT TYPE="RESET" VALUE="Limpar" />
+        </FORM>
     </body>
 
     </html>
